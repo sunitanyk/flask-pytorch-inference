@@ -9,7 +9,7 @@ This is a sample flask application that uses Bootstrap for the Frontend UI and P
 ## How to Use: Resnet50
 
 ```bash
-activate pytorch_inference
+conda activate pytorch_inference
 python app_resnet50.py
 ```
 
@@ -18,7 +18,7 @@ Go to 127.0.0.1:4555 on your browser.
 ## How to Use: Resnet50 (Transfer Learning)
 
 ```bash
-activate pytorch_inference
+conda activate pytorch_inference
 python app_resnet50_c10.py
 ```
 

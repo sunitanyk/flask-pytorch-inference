@@ -7,9 +7,12 @@ dependencies:
         - pytorch
         - torchvision
         - pip
+        - numpy
+        - protobuf
         - pip:
                 - opencv-contrib-python
                 - flask
                 - flask_bootstrap
                 - torchsummary
                 - Pillow
+                - onnx
