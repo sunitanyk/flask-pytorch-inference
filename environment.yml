@@ -1,0 +1,15 @@
+name: pytorch-inferebce
+channels:
+        - conda-forge
+        - pytorch
+dependencies:
+        - jupyter
+        - pytorch
+        - torchvision
+        - pip
+        - pip:
+                - opencv-contrib-python
+                - flask
+                - flask_bootstrap
+                - torchsummary
+                - Pillow
