@@ -2,18 +2,14 @@
 
 This is a sample flask application that uses Bootstrap for the Frontend UI and PyTorch for model inference.
 
-## Dependencies
+## Create conda environment
 
-Flask
-opencv-contrib-python
-bootstrap
-torch
-torchvision
-torchsummary
+```conda env create -f environment.yml```
 
 ## How to Use
 
 ```bash
+activate pytorch_inference
 python app_basic.py
 ```
 

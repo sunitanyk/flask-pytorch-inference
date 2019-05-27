@@ -1,4 +1,4 @@
-name: pytorch-inferebce
+name: pytorch_inference
 channels:
         - conda-forge
         - pytorch

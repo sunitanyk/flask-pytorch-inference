@@ -10,7 +10,7 @@ import os
 
 from PIL import Image
 
-__author__ = 'ibininja'
+__author__ = 'vishwesh5'
 
 app = Flask(__name__)
 Bootstrap(app)
