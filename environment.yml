@@ -4,7 +4,7 @@ channels:
         - pytorch
 dependencies:
         - jupyter
-        - pytorch
+        - pytorch==1.0.0
         - torchvision
         - pip
         - numpy
@@ -16,3 +16,4 @@ dependencies:
                 - torchsummary
                 - Pillow
                 - onnx
+                - matplotlib

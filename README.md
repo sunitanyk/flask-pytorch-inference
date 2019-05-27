@@ -1,37 +1,13 @@
-# flask-pytorch-inference
+# Chest X-Ray
 
-This is a sample flask application that uses Bootstrap for the Frontend UI and PyTorch for model inference.
+This repository contains the code for the following:
+1. Loading the .pt model using PyTorch
+2. Converting the model to ONNX format using PyTorch
+3. Model inference using ONNX model
+4. Web app for model inference using ONNX model
+
+The web app can be found in **`app/`** directory.
 
 ## Create conda environment
 
 ```conda env create -f environment.yml```
-
-## How to Use: Resnet50
-
-```bash
-conda activate pytorch_inference
-python app_resnet50.py
-```
-
-Go to 127.0.0.1:4555 on your browser.
-
-## How to Use: Resnet50 (Transfer Learning)
-
-```bash
-conda activate pytorch_inference
-python app_resnet50_c10.py
-```
-
-Go to 127.0.0.1:4556 on your browser.
-
-
-## Output
-
-You should get a screen shown below.
-
-Choose Browse and upload an image. Click Upload to get the output
-
-![](imgs/giraffe-1330814_640.jpg)
-
-
-![](imgs/out_giraffe-1330814_640.jpg)
