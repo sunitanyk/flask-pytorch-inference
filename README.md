@@ -27,6 +27,10 @@ python app_chest_xray.py
 
 Go to 127.0.0.1:4555 on your browser.
 
+## Test Images
+The test images can be found in **`chest_xray_kaggle`** folder.
+
+The test images have been obtained from [Kaggle Chest X-Ray Competition](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia).
 
 ## Output
 
