@@ -4,6 +4,11 @@
 
 ```conda env create -f environment.yml```
 
+## Download models
+The required models can be downloaded from the following links:
+1. [Chest X-Ray](https://drive.google.com/open?id=1P29KTRN_GwYoPmD3lRv58soYFQhjZ7dF)
+2. [Animals Caltech](https://drive.google.com/open?id=1fqtc7Qusm68Dwn3S-kwRmmMcO9v-R9OY)
+
 ## Outline
 
 This repository contains the code for the following:
