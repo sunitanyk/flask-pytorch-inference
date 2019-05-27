@@ -6,14 +6,24 @@ This is a sample flask application that uses Bootstrap for the Frontend UI and P
 
 ```conda env create -f environment.yml```
 
-## How to Use
+## How to Use: Resnet50
 
 ```bash
 activate pytorch_inference
-python app_basic.py
+python app_resnet50.py
 ```
 
 Go to 127.0.0.1:4555 on your browser.
+
+## How to Use: Resnet50 (Transfer Learning)
+
+```bash
+activate pytorch_inference
+python app_resnet50_c10.py
+```
+
+Go to 127.0.0.1:4556 on your browser.
+
 
 ## Output
 
