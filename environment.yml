@@ -1,10 +1,10 @@
-name: pytorch_inference_old
+name: pytorch_inference
 channels:
         - conda-forge
         - pytorch
 dependencies:
         - jupyter
-        - pytorch==0.4.1
+        - pytorch
         - torchvision
         - pip
         - numpy
