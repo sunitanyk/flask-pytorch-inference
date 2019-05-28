@@ -74,21 +74,22 @@ def upload():
 
         #outputFile = "/".join([target, 'out_{}'.format(filename) ])
         #cv2.imwrite(outputFile,gray)
-        model = onnx.load("models/resnet50_ct10.onnx")
+        model = onnx.load("../chest_xray_kaggle.onnx")
         rep = backend.prepare(model, device="CPU")
         transform = image_transforms['test']
         test_image = Image.open(absPath)
         test_image_tensor = transform(test_image)
+        print(test_image_tensor.shape)
         if torch.cuda.is_available():
-            test_image_tensor = test_image_tensor.view(1, 3, 224, 224).cuda()
+            test_image_tensor = test_image_tensor.view(1, 1, 224, 224).cuda()
         else:
-            test_image_tensor = test_image_tensor.view(1, 3, 224, 224)
+            test_image_tensor = test_image_tensor.view(1, 1, 224, 224)
         np_image = test_image_tensor.numpy()
         outputs = rep.run(np_image.astype(np.float32))
         ps = torch.exp(torch.from_numpy(outputs[0]))
-        topk, topclass = ps.topk(3, dim=1)
+        topk, topclass = ps.topk(2, dim=1)
         out_img = cv2.imread("./static/images/blank_output.png")
-        for i in range(3):
+        for i in range(2):
             print("Predcition", i+1, ":", topclass[0][i], ", Score: ", topk[0][i].item())
             data_to_write = "Prediction %d: %d, Score: %.3f"%(i,topclass[0][i],topk[0][i].item())
             out_img = cv2.putText(out_img, data_to_write,
